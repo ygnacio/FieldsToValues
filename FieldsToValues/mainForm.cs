@@ -23,5 +23,13 @@ namespace FieldsToValues
                 Result.Text = Result.Text.Replace(postFind.Text, postReplace.Text);
             }
         }
+
+        private void CopyBtn_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(Result.Text))
+            {
+                Clipboard.SetText(Result.Text);
+            }
+        }
     }
 }

@@ -44,6 +44,7 @@ namespace FieldsToValues
             this.Result = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.CopyBtn = new System.Windows.Forms.Button();
             this.grpPre.SuspendLayout();
             this.grpPost.SuspendLayout();
             this.SuspendLayout();
@@ -148,7 +149,7 @@ namespace FieldsToValues
             // 
             // Apply
             // 
-            this.Apply.Location = new System.Drawing.Point(320, 252);
+            this.Apply.Location = new System.Drawing.Point(269, 253);
             this.Apply.Name = "Apply";
             this.Apply.Size = new System.Drawing.Size(73, 30);
             this.Apply.TabIndex = 4;
@@ -182,11 +183,22 @@ namespace FieldsToValues
             this.label6.TabIndex = 7;
             this.label6.Text = "Result:";
             // 
+            // CopyBtn
+            // 
+            this.CopyBtn.Location = new System.Drawing.Point(372, 253);
+            this.CopyBtn.Name = "CopyBtn";
+            this.CopyBtn.Size = new System.Drawing.Size(73, 30);
+            this.CopyBtn.TabIndex = 8;
+            this.CopyBtn.Text = "Copy";
+            this.CopyBtn.UseVisualStyleBackColor = true;
+            this.CopyBtn.Click += new System.EventHandler(this.CopyBtn_Click);
+            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(703, 441);
+            this.Controls.Add(this.CopyBtn);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.Result);
@@ -224,6 +236,7 @@ namespace FieldsToValues
         private System.Windows.Forms.TextBox Result;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button CopyBtn;
     }
 }
 
